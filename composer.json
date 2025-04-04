@@ -1,17 +1,17 @@
 {
-    "name": "b4x/b4x-integracao-sdk",
-    "description": "B4X INTEGRAÇÃO",
+    "name": "ricardo-tulio-b4x/b4x-integracao-php-sdk",
+    "description": "b4x",
     "type": "library",
     "keywords": [
-        "B4X"
+        "b4x"
     ],
-    "homepage": "https://www.b4x.com.br/",
+    "homepage": "https://b4x.com.br",
     "license": [
         "MIT"
     ],
     "authors": [
         {
-            "name": "Ricardo Augusto Tulio",
+            "name": "ricardo tulio",
             "email": "ricardo.tulio@b4x.com.br"
         }
     ],

@@ -58,19 +58,19 @@ Caso seja utilizado um encoding diferente, será retornado um erro de tipo de da
 Run the following command to install the package and automatically add the dependency to your composer.json file:
 
 ```bash
-composer require "b4x/b4x-integracao-sdk:1.0.0"
+composer require "ricardo-tulio-b4x/b4x-integracao-php-sdk:1.0.1"
 ```
 
 Or add it to the composer.json file manually as given below:
 
 ```json
 "require": {
-    "b4x/b4x-integracao-sdk": "1.0.0"
+    "ricardo-tulio-b4x/b4x-integracao-php-sdk": "1.0.1"
 }
 ```
 
 You can also view the package at:
-https://packagist.org/packages/b4x/b4x-integracao-sdk#1.0.0
+https://packagist.org/packages/ricardo-tulio-b4x/b4x-integracao-php-sdk#1.0.1
 
 ## Test the SDK
 
@@ -83,7 +83,7 @@ You can change the PHPUnit test configuration in the `phpunit.xml` file.
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -99,7 +99,7 @@ The following parameters are configurable for the API Client:
 | `retryOnTimeout` | `bool` | Whether to retry on request timeout.<br>*Default*: `true` |
 | `httpStatusCodesToRetry` | `array` | Http status codes to retry against.<br>*Default*: `408, 413, 429, 500, 502, 503, 504, 521, 522, 524` |
 | `httpMethodsToRetry` | `array` | Http methods to retry against.<br>*Default*: `'GET', 'PUT'` |
-| `basicAuthCredentials` | [`BasicAuthCredentials`](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
+| `basicAuthCredentials` | [`BasicAuthCredentials`](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/auth/basic-authentication.md) | The Credentials Setter for Basic Authentication |
 
 The API client can be initialized as follows:
 
@@ -119,38 +119,38 @@ $client = ApiB4CClientBuilder::init()
 
 This API uses the following authentication schemes.
 
-* [`basic (Basic Authentication)`](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/auth/basic-authentication.md)
+* [`basic (Basic Authentication)`](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/auth/basic-authentication.md)
 
 ## List of APIs
 
-* [Entregasdo Pedido](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/entregasdo-pedido.md)
-* [Eventosda Entrega](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/eventosda-entrega.md)
-* [Eventos Pedidos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/eventos-pedidos.md)
-* [Nf Pedidos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/nf-pedidos.md)
-* [Filiais Faturamento](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/filiais-faturamento.md)
-* [Produtosvinculofiliais](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/produtosvinculofiliais.md)
-* [Observações Pedidos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/observações-pedidos.md)
-* [Categorias](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/categorias.md)
-* [Marcas](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/marcas.md)
-* [Produtos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/produtos.md)
-* [Pedidos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/pedidos.md)
-* [Campanha](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/campanha.md)
-* [Oferta](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/oferta.md)
-* [Quantidade](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/quantidade.md)
-* [Preços](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/preços.md)
-* [Filiais](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/filiais.md)
-* [Usuarios](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/usuarios.md)
-* [Endereco](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/endereco.md)
-* [Descontos](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/descontos.md)
-* [Clientes](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/clientes.md)
-* [Boleto](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/boleto.md)
-* [Pix](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/pix.md)
-* [Tickets](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/tickets.md)
-* [Personalizacao](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/controllers/personalizacao.md)
+* [Entregasdo Pedido](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/entregasdo-pedido.md)
+* [Eventosda Entrega](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/eventosda-entrega.md)
+* [Eventos Pedidos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/eventos-pedidos.md)
+* [Nf Pedidos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/nf-pedidos.md)
+* [Filiais Faturamento](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/filiais-faturamento.md)
+* [Produtosvinculofiliais](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/produtosvinculofiliais.md)
+* [Observações Pedidos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/observações-pedidos.md)
+* [Categorias](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/categorias.md)
+* [Marcas](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/marcas.md)
+* [Produtos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/produtos.md)
+* [Pedidos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/pedidos.md)
+* [Campanha](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/campanha.md)
+* [Oferta](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/oferta.md)
+* [Quantidade](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/quantidade.md)
+* [Preços](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/preços.md)
+* [Filiais](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/filiais.md)
+* [Usuarios](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/usuarios.md)
+* [Endereco](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/endereco.md)
+* [Descontos](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/descontos.md)
+* [Clientes](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/clientes.md)
+* [Boleto](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/boleto.md)
+* [Pix](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/pix.md)
+* [Tickets](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/tickets.md)
+* [Personalizacao](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/controllers/personalizacao.md)
 
 ## Classes Documentation
 
-* [ApiException](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/api-exception.md)
-* [HttpRequest](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/http-request.md)
-* [HttpResponse](https://www.github.com/ricardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.0/doc/http-response.md)
+* [ApiException](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/api-exception.md)
+* [HttpRequest](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/http-request.md)
+* [HttpResponse](https://www.github.com/RicardoAugustoTulio/b4x-integracao-php-sdk/tree/1.0.1/doc/http-response.md)
 
